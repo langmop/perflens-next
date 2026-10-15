@@ -6,6 +6,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "PerfLens",
   description: "Real performance metrics. No Lighthouse.",
+  icons: { icon: "/icon.png" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
