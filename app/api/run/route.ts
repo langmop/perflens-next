@@ -9,7 +9,9 @@ async function launchBrowser() {
     const puppeteer = (await import('puppeteer-core')).default
     return puppeteer.launch({
       args: chromium.args,
-      executablePath: await chromium.executablePath(),
+      executablePath: await chromium.executablePath(
+        'https://github.com/Sparticuz/chromium/releases/download/v153.0.0/chromium-v153.0.0-pack.tar'
+      ),
       headless: true,
     })
   }
